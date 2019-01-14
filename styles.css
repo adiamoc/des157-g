@@ -1,0 +1,93 @@
+body {
+	box-sizing: border-box;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	background-image: url(bg.jpg);
+	background-repeat: repeat;
+	height: 100%;
+	display: flex;
+}
+
+#main {
+	width: 800px;
+	min-height: 100vh;
+	margin: auto;
+	background: white;
+	padding: 0;
+}
+
+#mySketch {
+	width: 800px;
+	height: 250px;
+	background-color: rgb(220,30,20);
+
+}
+
+#info {
+	height: 100%;
+}
+
+aside {
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 180px;
+	float: left;
+}
+
+section {
+	width: 590px;
+	float: left;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-top: 30px;
+}
+
+
+section > div {
+	background-color: white;
+	padding: 20px;
+
+}
+
+section > div:not(:last-of-type){
+	border-right: 3px dotted black;
+	-webkit-border-image:
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	padding-bottom: .5em;
+}
+
+h1 {
+	font-size: 5em;
+	margin: 0;
+}
+
+#dot {
+	color: rgb(220,30,20);
+}
+
+h2 {
+	margin: 0;
+}
+
+footer {
+	position: fixed;
+	bottom: 1em;
+	margin-left: 30px;
+	padding-top: 30px;
+	font-size: .8em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: rgb(220,30,20);
+}
