@@ -1,0 +1,198 @@
+body {
+	box-sizing: border-box;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	height: 100%;
+}
+
+#userinput {
+	margin-left: 5em;
+ 	padding: .5em;
+ 	width: 40%;
+ 	border-radius: 25px;
+ 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+ 	float: left;
+ 	padding-top: 2em;
+ 	margin-top: -1em;
+}
+
+
+#output {
+	width: 50%;
+	float: left;
+	position: absolute;
+	right: 0;
+	top: 4em;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+ 	border-left: 10px solid rgb(196,48,44);
+ 	font-size: 5.5em;
+ 	padding-left: .2em;
+ 	margin-left: 1em;
+ 	width: 50%;
+ 	margin-top: .4em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+h3 {
+	display: inline-block;
+	padding-right: 1em;
+	padding-left: .4em;
+	font-weight: 100;
+}
+form {
+	padding-left: 2em;
+}
+
+input {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+footer {
+	position: absolute;
+	bottom: 1.5em;
+	left: 5em;
+	margin: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: rgb(196,48,44);
+}
+
+#reset, #submit {
+	background-color: rgb(196,48,44);
+	color: white;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5em;
+	margin-right: 1em;
+	padding: .8em;
+}
+
+input[type="text"] {
+	width: 60%;
+	min-width: 200px;
+	padding: .5em;
+	padding-left: 0;
+	border: none;
+	border-bottom: 2px solid black;
+	color: rgb(196,48,44);
+}
+
+input[type="text"]:focus {
+	border-bottom: 2px solid rgb(196,48,44);
+}
+#reset:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background-color: rgb(242,59,54);
+	cursor: pointer;
+}
+
+img {
+	position: absolute;
+	margin: 0;
+}
+
+.teaimg {
+	opacity: 0.5;
+}
+
+.hide {
+	display: none;
+}
+
+input[type="radio"]{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: gainsboro;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+}
+
+input[type="radio"]:after {
+	background-color: gainsboro;
+	content: '';
+	position: relative;
+	display: block;
+	height: 11px;
+	width: 11px;
+	left: 2px;
+	top: 2px;
+	border-radius: 10px;
+}
+
+input[type="radio"]:hover{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: silver;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+}
+
+input[type="radio"]:hover:after {
+	background-color: silver;
+	content: '';
+	position: relative;
+	display: block;
+	height: 11px;
+	width: 11px;
+	left: 2px;
+	top: 2px;
+	border-radius: 10px;
+}
+
+input[type="radio"]:checked:after {
+	background-color: rgb(196,48,44);
+	height: 15px;
+	width: 15px;
+	left: 0px;
+	top: 0px;
+}
+
+#question {
+	font-size: 35em;
+	color: rgb(196,48,44);
+}
+
+#nametag{
+	border-radius: 5px;
+	text-align: center;
+	background-color: white;
+	padding: .5em;
+	margin-left: .5em;
+	font-size: 2em;
+	position: absolute;
+	top: 10em;
+}
+
+#tag {
+	margin: 0;
+}

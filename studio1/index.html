@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>DES 157 Studio 1</title>
+	<meta name="Chen Ma" content="Studio 1">
+
+	<!-- style -->
+	<link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&amp;subset=chinese-simplified" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<h1>Milktea Mix</h1>
+	<!-- user inputs -->
+	<section id="userinput">
+		<form>
+
+			<h2>Enter Your Name:</h2>
+ 			<input type="text" name="myname" id="myname" placeholder="Chen" required>
+
+ 			<h2>Choose Your Flavour:</h2>
+ 			<div id="flavour">
+ 				<input type="radio" name="flavour" value="mango" id="flavour"><h3>Mango</h3>
+				<input type="radio" name="flavour" value="strawberry" id="flavour"><h3>Strawberry</h3>
+				<input type="radio" name="flavour" value="apple" id="flavour"><h3>Apple</h3>
+ 			</div>
+
+			<h2>Choose Your Topping:</h2>
+			<div id="topping">
+				<input type="radio" name="topping" value="boba" id="topping"><h3>Boba</h3>
+				<input type="radio" name="topping" value="grassjelly" id="topping"><h3>Grass Jelly</h3>
+				<input type="radio" name="topping" value="lycheejelly" id="topping"><h3>Lychee Jelly</h3>
+			</div>
+
+			<h2>Choose Your Tea:</h2>
+			<div id="tea">
+				<input type="radio" name="tea" value="black" id="tea"><h3>Black Tea</h3>
+				<input type="radio" name="tea" value="green" id="tea"><h3>Green Tea</h3>
+			</div>
+
+			<input type="reset" value="Cancel Order" id="reset">
+			<input type="submit" value="Order Now" id="submit"> 
+		</form>
+	</section>
+	<!-- milktea img -->
+	<section id="output">
+		<span id="question">?</span>
+		<img src="images/milktea.png" class="hide" id="milkteaimg">
+		<img src="images/strawberry.png" class="hide" id="strawberryimg">
+		<img src="images/apple.png" class="hide" id="appleimg">
+		<img src="images/mango.png" class="hide" id="mangoimg">
+
+
+		<img src="images/boba.png" class="hide" id="bobaimg">
+		<img src="images/lycheejelly.png" class="hide" id="lycheejellyimg">
+		<img src="images/grassjelly.png" class="hide" id="grassjellyimg">
+
+
+		<img src="images/greentea.png" class="teaimg hide" id="greenimg">
+		<img src="images/blacktea.png" class="teaimg hide" id="blackimg">
+
+		<section id="nametag" class="hide">
+			<p id="tag"></p>
+		</section>
+
+	</section>
+	<footer>
+		<a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>//
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
