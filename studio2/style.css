@@ -1,0 +1,96 @@
+body {
+	box-sizing: border-box;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	height: 100%;
+	cursor: url(images/hand.png), auto;
+	text-align: right;
+
+}
+
+/*img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+
+}*/
+
+main {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/bg.png);
+	background-attachment: fixed;
+	background-position: center; 
+	position: fixed;
+}
+
+h1 {
+	display: none;
+}
+
+#mac {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/mac.png);
+	background-attachment: fixed;
+	background-position: center; 
+	position: fixed;
+}
+
+#phone {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/phone.png);
+	background-attachment: fixed;
+	background-position: center; 
+	position: fixed;
+}
+
+#earphone {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/earphone.png);
+	background-attachment: fixed;
+	background-position: center; 
+	position: fixed;
+}
+
+#cover {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/cover.png);
+	background-attachment: fixed;
+	background-position: center; 
+	position: fixed;
+}
+footer {
+	position: fixed;
+	bottom: 1em;
+	left: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(196,48,44);
+	cursor: url(images/hand.png), auto;
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: white;
+  }
+  h1 {
+  	padding-right: .5em;
+  	display: block;
+	position: absolute;
+	font-size: 22vw;
+	color: rgb(196,48,44);
+	margin: auto;
+
+  }
+}
