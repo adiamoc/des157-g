@@ -1,58 +1,78 @@
-body {
+*{
 	box-sizing: border-box;
-	font-family: 'ZCOOL QingKe HuangYou', cursive;
-	height: 100%;
-	cursor: url(images/hand.png), auto;
-	text-align: right;
-
 }
 
-/*img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
-
-}*/
-
-main {
-	width: 100vw;
-	height: 100vh;
-	background-image: url(images/bg.png);
-	background-attachment: fixed;
-	background-position: center; 
-	position: fixed;
+body {
+	background-color: #F9CE19;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	height: 100%;
+	text-align: center;
+	color: white;
+	overflow: hidden;
 }
 
 h1 {
 	display: none;
 }
 
-#mac {
+h2 {
+	display: block;
+	color: #F9CE19;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+	font-size: 5em;
+	padding-left: 0.5em;
+}
+
+p {
+	margin: auto;
+}
+
+#mac, #phone, #earphone, #bag {
 	width: 100vw;
 	height: 100vh;
+	background-attachment: fixed;
+	background-position: top; 
+	position: fixed;
+	background-repeat: no-repeat;
+}
+
+.open {
+	background-image: url(images/bg.png);
+}
+
+.close {
+	background-image: url(images/close.png);
+}
+
+.mac {
 	background-image: url(images/mac.png);
-	background-attachment: fixed;
-	background-position: center; 
-	position: fixed;
 }
 
-#phone {
-	width: 100vw;
-	height: 100vh;
+.mac_red {
+	background-image: url(images/mac_red.png);
+}
+
+.phone {
 	background-image: url(images/phone.png);
-	background-attachment: fixed;
-	background-position: center; 
-	position: fixed;
 }
 
-#earphone {
-	width: 100vw;
-	height: 100vh;
+.phone_red {
+	background-image: url(images/phone_red.png);
+}
+
+.earphone {
 	background-image: url(images/earphone.png);
-	background-attachment: fixed;
-	background-position: center; 
-	position: fixed;
+}
+
+.earphone_red {
+	background-image: url(images/earphone_red.png);
+}
+
+.hide {
+	display: none;
 }
 
 #cover {
@@ -60,8 +80,9 @@ h1 {
 	height: 100vh;
 	background-image: url(images/cover.png);
 	background-attachment: fixed;
-	background-position: center; 
+	background-position: top; 
 	position: fixed;
+	background-repeat: no-repeat;
 }
 footer {
 	position: fixed;
@@ -71,26 +92,51 @@ footer {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 a:hover {
 	text-decoration: none;
 	color: rgb(196,48,44);
-	cursor: url(images/hand.png), auto;
+}
+
+p {
+	text-align: left;
+	margin: auto;
+	width: 300px;
+	padding-top: 2em;
+	padding-right: 0.5em;
+	font-size: 2em;
+	color: black;
 }
 
 @media only screen and (min-width: 769px) {
   body {
     background-color: white;
+    cursor: url(images/hand.png), auto;
+    color: black;
   }
   h1 {
-  	padding-right: .5em;
+  	padding: 0em;
   	display: block;
 	position: absolute;
-	font-size: 22vw;
-	color: rgb(196,48,44);
-	margin: auto;
+	top: -0.6em;
+	left: -0.9em;
+	font-size: 5vw;
+	width: 120%;
 
+	color: #F9CE19;
+	margin: auto;
+  }
+
+  h2 {
+  	display: none;
+  }
+  a {
+  	color: black;
+  }
+  a:hover {
+	color: rgb(196,48,44);
+	cursor: url(images/hand.png), auto;
   }
 }
