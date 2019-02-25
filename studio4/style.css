@@ -41,7 +41,7 @@ body {
 	cursor: pointer;
 	&:focus {
       outline: none;
-	}
+	};
 }
 h1 {
 	font-size: 3em;
