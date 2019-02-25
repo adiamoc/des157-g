@@ -39,9 +39,10 @@ body {
 	height: 4em;
 	margin: .5em;
 	cursor: pointer;
-	&:focus {
-      outline: none;
-	};
+}
+
+#styleInput:focus {
+    outline: none;
 }
 h1 {
 	font-size: 3em;
