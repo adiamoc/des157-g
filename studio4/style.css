@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	height: 100%;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+
+
+#tool_bar {
+	background-color: rgb(242,59,54);
+	width: 20%;
+	float: left;
+	height: 100vh;
+	color: white;
+}
+
+#draw_panel {
+	width: 80%;
+	height: 100vh;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#canvas {
+	cursor: pointer;
+}
+
+#styleInput {
+	border: solid white 5px;
+	border-radius: 2em;
+	width: 4em;
+	height: 4em;
+	margin: .5em;
+	cursor: pointer;
+	&:focus {
+      outline: none;
+	}
+}
+h1 {
+	font-size: 3em;
+	text-decoration: underline;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
