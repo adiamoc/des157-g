@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	height: 100%;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+
+
+#tool_bar {
+	background-color: rgb(242,59,54);
+	width: 20%;
+	float: left;
+	height: 100vh;
+	color: white;
+	z-index: 1;
+}
+
+#draw_panel {
+	width: 80%;
+	height: 100vh;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#canvas {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.blurry {
+	filter: blur(5px);
+}
+
+.grey {
+	background-color: rgba(0,0,0,0.3);
+}
+
+#create_canvas {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*background-color: rgba(0,0,0,0.3);*/
+	z-index: 2; 
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+#styleInput {
+	border: solid white 5px;
+	border-radius: 2em;
+	width: 4em;
+	height: 4em;
+	margin: .5em;
+	cursor: pointer;
+}
+
+#styleInput:focus {
+	outline: none;
+}
+
+#logo {
+	width: 60%;
+	margin: 2em;
+	border: dashed white 5px;
+	padding: .5em;
+	margin-bottom: 0em;
+}
+
+#new_canvas {
+	width: 500px;
+	height: 300px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 1em;
+	position: absolute;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;   
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	background: rgb(242,59,54);
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	border-radius: 50%;
+	background: rgb(242,59,54);
+	cursor: pointer;
+}
+
+#new {
+	background: rgb(242,59,54);
+	cursor: pointer;
+	color: white;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5em;
+	padding: .5em;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+}
+
+#new:hover {
+	opacity: 1;
+}
+
+input[type=range]::-moz-focus-outer {
+	border: 0;
+}
+
+*:focus {outline:none !important}
+
+h1{
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: rgb(242,59,54);
+	display: inline;
+	line-height: 3em;
+}
+footer {
+	position: fixed;
+	bottom: 1em;
+	left: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(196,48,44);
+}
