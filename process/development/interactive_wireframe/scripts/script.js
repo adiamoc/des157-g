@@ -5,7 +5,7 @@ console.log('Reading js...');
 var r = 255;
 var g = 255;
 var b = 255;
-var grid = 25;
+var grid = 5;
 var s = grid/2;
 var myCanvas;
 var w = 600;
@@ -21,12 +21,10 @@ valH.innerHTML = sliderH.value;
 
 sliderW.oninput = function() {
   valW.innerHTML = this.value;
-  // w = this.value;
 }
 
 sliderH.oninput = function() {
   valH.innerHTML = this.value;
-  // h = this.value;
 }
 
 function update(picker) {
@@ -53,6 +51,7 @@ function newCanvas() {
   myCanvas.parent('canvas');
   background(220,220,220);
 
+  document.getElementById('create_canvas').classList.add('no_create');
   document.getElementById('create_canvas').classList.remove('grey');
   document.getElementById('new_canvas').classList.add('hide');
   document.getElementById('drawnow').classList.remove('blurry');
