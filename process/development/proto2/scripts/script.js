@@ -58,11 +58,19 @@ function newCanvas() {
 
 
 }
-var checkbox = document.querySelector("input[name=eraser]");
+var checkbox1 = document.querySelector("input[name=eraser]");
 var eraser = document.getElementById("eraser").checked;
 
-checkbox.addEventListener( 'change', function() {
+checkbox1.addEventListener( 'change', function() {
     eraser = document.getElementById("eraser").checked;
+});
+
+
+var checkbox2 = document.querySelector("input[name=eraser]");
+var grid = document.getElementById("grid").checked;
+
+checkbox2.addEventListener( 'change', function() {
+    grid = document.getElementById("grid").checked;
 });
 
 function saveImg() {
