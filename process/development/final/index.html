@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>DES 157 Studio 4</title>
+	<title>DES 157 Final</title>
 	<meta name="Chen Ma" content="Studio 4">
 
 	<link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
@@ -16,11 +16,13 @@
 
 	<section id="create_canvas" class="grey">
 		<div id="new_canvas">
+			<h1>Let's create pixel art!</h1><br>
+			<p>What size of canvas would you like?</p>
 			<h2>Canvas Width: </h2><h2 id="valw"></h2>
 			<input type="range" min="0" max="700" value="600" class="slider" step="5" id="width" autocomplete="off">
 			<h2>Canvas Height: </h2><h2 id="valh"></h2>
 			<input type="range" min="0" max="700" value="600" class="slider" step="5" id="height" autocomplete="off">
-			<button id="new" onclick="newCanvas()">NEW</button>
+			<button id="new" onclick="newCanvas()">MAKE CANVAS</button>
 		</div>
 	</section>
 
@@ -29,31 +31,40 @@
 			<img src="images/leftside.png" alt="tool bar" id="bar">
 			<img src="images/logo.png" alt="pixir" id="logo">
 			<section class="tools">
-				<h1>Color</h1>
-				<input id="styleInput" class="jscolor {valueElement:' ', styleElement:'styleInput', onFineChange:'update(this)'}" readonly="readonly">
-				<h1>Eraser</h1>
-				<label class="container">
-				  <input type="checkbox" id="eraser" name="eraser">
-				  <span class="checkmark"></span>
-				</label>
-				<br>
-				<h1>Grid</h1>
-				<label class="container">
-				  <input type="checkbox" checked="checked" id="grid" name="grid">
-				  <span class="checkmark"></span>
-				</label>
+				<section class="myitem"> 
+					<h1>Color</h1>
+					<input id="styleInput" class="jscolor {valueElement:' ', styleElement:'styleInput', onFineChange:'update(this)'}" readonly="readonly">	
+				</section>
+				<section class="myitem">
+					<h1>Eraser</h1>
+					<label class="container">
+					  <input type="checkbox" id="eraser" name="eraser" autocomplete="off">
+					  <span class="checkmark"></span>
+					</label>
+				</section>
+				<section class="myitem">
+					<h1>Help</h1>
+					<label class="container">
+					  <input type="checkbox" checked="checked" id="bg" name="bg" autocomplete="off">
+					  <span class="checkmark"></span>
+					</label>	
+				</section>	
+				<p id="helpme">
+					Click on 'Color' box to pick a color and click outside to close.<br>
+					Click on the 'Eraser' checkbox to start using eraser and click again to disable.<br>
+					Press 'Save' to save your art!
+				</p>
 
 			</section>
 		</section>
 
 		<section id="draw_panel">
-			<div id="mygrid"></div>
-
 			<div id="canvas"></div>
 		</section>
-		<div id="save">
+
+		<div id="savemyArt" onclick="saveImg();">
 			<h1>Save</h1>
-			<img src="images/savebutton.png" alt="save" id="savebutton" onclick="saveImg();">
+			<img src="images/savebutton.png" alt="save" id="savebutton">
 		</div>
 		<footer>
 			<a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>//

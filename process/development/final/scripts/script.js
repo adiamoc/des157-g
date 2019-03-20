@@ -7,7 +7,7 @@ var g = 255;
 var b = 255;
 var grid = 5;
 var s = grid/2;
-var myCanvas, grid;
+var myCanvas;
 var w = 600;
 var h = 600;
 
@@ -34,9 +34,6 @@ function update(picker) {
 }
 
 function setup() {
-  grid = createCanvas(w,h);
-  myCanvas.parent('mygrid');
-
   myCanvas = createCanvas(w, h);
   myCanvas.parent('canvas');
 
@@ -46,6 +43,7 @@ function setup() {
 
   noStroke();
 }
+
 
 function newCanvas() {
   w = sliderW.value;
@@ -69,12 +67,21 @@ checkbox1.addEventListener( 'change', function() {
 });
 
 
-var checkbox2 = document.querySelector("input[name=grid]");
-var g = document.getElementById("grid").checked;
+var checkbox2 = document.querySelector("input[name=bg]");
+var bg = document.getElementById("bg").checked;
+var helpme = document.getElementById("helpme");
 
 checkbox2.addEventListener( 'change', function() {
-    g= document.getElementById("grid").checked;
+    bg = document.getElementById("bg").checked;
+
+    if (bg ==true) {
+      helpme.classList.remove('hide');
+    } else {
+      helpme.classList.add('hide');
+
+    }
 });
+
 
 function saveImg() {
   saveCanvas(myCanvas, 'drawing', 'jpg');
@@ -94,16 +101,11 @@ function draw() {
   }
 
   stroke(255);
-
-  if (g == true) {
-    for (var i = grid; i <= w; i+=grid) {
-      line(i, 0, i, h);
-    }
-    for (var i = grid; i <= h; i+=grid) {
-      line(0, i, w, i);
-    }
-  } else {
-
+  for (var i = grid; i <= w; i+=grid) {
+    line(i, 0, i, h);
+  }
+  for (var i = grid; i <= h; i+=grid) {
+    line(0, i, w, i);
   }
 
 }
